@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = 0;
+    let number2 = 1;
+    let number = number2;
+
+    function printFibonacci(n) {
+        for (let i = 2; i < n && number < n; i++) {
+            document.write(number);
+            document.write("<br>");
+
+            number = number1 + number2;
+            document.write("<br>");
+
+            number1 = number2;
+            document.write("<br>");
+            number2 = number;
+        }
+    }
+
+    printFibonacci(12);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(arr, value) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === value) {
+                arr.splice(i, 1)
+            }
+        }
+        return arr
+    }
+
+    let arr = [12, 6, 3, 7, 21, 5, 7];
+    let result = check(arr, 2);
+    document.write(result + "<br>");
+
+    let arr2 = [12, 6, 3, 7, 21, 5, 7];
+    let result2 = check(arr2, 12);
+    document.write(result2 + "<br>");
+
+    let arr3 = [12, 6, 3, 7, 21, 5, 7];
+    let result3 = check(arr3, 7);
+    document.write(result3 + "<br>");
+
+    let arr4 = [12, 6, 3, 7, 21, 5, 7];
+    let result4 = check(arr4, 4);
+    document.write(result4)
+
+</script>
